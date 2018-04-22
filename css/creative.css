@@ -1,3 +1,36 @@
+@font-face{
+   font-family:Catamaran-Regular;
+   src: url(/vendor/font-awesome/fonts/Catamaran-Regular.ttf);
+}
+@font-face{
+   font-family:Catamaran-Light;
+   src: url(/vendor/font-awesome/fonts/Catamaran-Light.ttf);
+}
+@font-face{
+   font-family:Catamaran-ExtraLight;
+   src: url(/vendor/font-awesome/fonts/Catamaran-ExtraLight.ttf);
+}
+@font-face{
+   font-family:Catamaran-Boldd;
+   src: url(/vendor/font-awesome/fonts/Catamaran-Bold.ttf);
+}
+@font-face{
+   font-family:Catamaran-Mediumm;
+   src: url(/vendor/font-awesome/fonts/Catamaran-Medium.ttf);
+}
+@font-face{
+   font-family:Catamaran-SemiBold;
+   src: url(/vendor/font-awesome/fonts/Catamaran-SemiBold.ttf);
+}
+@font-face{
+   font-family:Catamaran-Blackk;
+   src: url(/vendor/font-awesome/fonts/Catamaran-Black.ttf);
+}
+@font-face{
+   font-family:Catamaran-Thinn;
+   src: url(/vendor/font-awesome/fonts/Catamaran-Thin.ttf);
+}
+
 body,
 html {
   width: 100%;
@@ -5,13 +38,13 @@ html {
 }
 
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Catamaran-Regular','Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: #F05F40;
+  border-color:#fac624 ;
 }
 
 hr.light {
@@ -39,7 +72,7 @@ h6 {
 }
 
 .bg-primary {
-  background-color: #F05F40 !important;
+  background-color: #fff !important;
 }
 
 .bg-dark {
@@ -83,10 +116,12 @@ img::-moz-selection {
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Catamaran-thinn','Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
+  background: rgba(255,255,255,.8);
+  color: #0074C8;
 }
 
 #mainNav .navbar-brand {
@@ -125,10 +160,6 @@ img::-moz-selection {
 }
 
 @media (min-width: 992px) {
-  #mainNav {
-    border-color: transparent;
-    background-color: transparent;
-  }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
   }
@@ -140,11 +171,11 @@ img::-moz-selection {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-    color: rgba(255, 255, 255, 0.7);
+    color: #0074C8;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #fff;
+    color:#999899;
   }
   #mainNav.navbar-shrink {
     border-bottom: 1px solid rgba(33, 37, 41, 0.1);
@@ -169,7 +200,7 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/header.jpg");
+  background-image: url("../img/header3.jpg");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -196,13 +227,13 @@ header.masthead p {
   }
 }
 
+header.masthead {
+  height: 100vh;
+  min-height: 650px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 @media (min-width: 992px) {
-  header.masthead {
-    height: 100vh;
-    min-height: 650px;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
   header.masthead h1 {
     font-size: 3rem;
   }
@@ -309,4 +340,101 @@ header.masthead p {
 
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+.mainCategories{
+	width: 100%;
+}
+
+.navbar ul li{
+	border-right: solid #999899 1px;
+}
+.navbar ul li:last-child{
+	border-right: none;
+}
+
+#services{
+	background-color: blue;
+}
+
+.titleProductos{
+	text-align:center;
+	font-family: Catamaran-thinn;
+	color: #fac624;
+}
+
+.container.my-auto{
+  background-color: rgba(0,0,0,.7);
+  margin: 0;
+  width: 100%;
+  max-width: initial;
+  height: 100%;
+  position: relative;
+}
+
+.container.my-auto img{
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 130px);
+}
+
+.container-producto-index{
+  height: 300px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.container-producto-index > div{
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-producto-index > div div{
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  border-radius: 10px;
+  transition: all .3s;
+}
+
+.container-producto-index:hover > div div{
+  background-color: #999999b5;
+}
+
+.container-producto-index .text{
+  color: #fac624;
+  margin-top:10px;
+  display:inline-block;    
+  bottom: 0;
+  padding: 15px;
+  border-radius: 0 0 10px 10px;
+  font-size: 25px;
+  left: 0;
+  font-weight: bold;
+}
+.bg-primary{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.navbar, .navbar .navbar-brand, .navbar .navbar-brand img{
+  transition: all .5s;
+}
+#navbar:hover{
+  background-color: white !important;
+}
+.navbar.header-fix-active{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.navbar.header-fix-active .navbar-brand{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.navbar.header-fix-active .navbar-brand img{
+  width: 100px;
 }

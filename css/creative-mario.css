@@ -1,0 +1,71 @@
+.no-padding{
+	padding: 0 !important; 
+}
+.container.main{
+	margin-top: 100px;
+}
+.background-white{
+	border-radius: 2px;
+	padding: 5px;
+	background-color: white;
+}
+
+/*List*/
+	.title-cat{
+		color: blue;
+		font-weight: bold;
+	}
+
+	.cats ul {
+		list-style-type: none;
+		padding-left: 20px;
+	}
+
+	.cats ul li:hover{
+		text-decoration: underline;
+	}
+
+	.cats ul li span{
+		float: right;
+		margin-right: 20px;
+	}
+/*List*/
+
+/*Producto*/
+	.pro-card{
+		display: inline-block;
+		position: relative;
+		    margin: 10px;
+		background-color: #fff;
+		-webkit-transition: -webkit-box-shadow .25s;
+		transition: -webkit-box-shadow .25s;
+		transition: box-shadow .25s;
+		transition: box-shadow .25s, -webkit-box-shadow .25s;
+		border-radius: 2px;
+
+		-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+	}
+	.pro-card:hover{
+		-webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3)
+	}
+	.pro-card .info{
+		border-top: 1px solid rgba(160,160,160,0.2);
+		padding: 10px;
+	}
+	.pro-card .price{
+		padding: 10px;
+		font-weight: bold;
+		border-top: 1px solid rgba(160,160,160,0.2);
+		color: #ff6600;
+		font-size: 30px;
+	}
+	.img-product img{
+		width: 100%;
+	}
+
+	.descripcion{
+		border-top: 1px solid rgba(160,160,160,0.2);
+	}
+/*Producto*/
